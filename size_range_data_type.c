@@ -10,6 +10,10 @@ int main()
     unsigned char ch1 = 0;   // try with 127, 128, 255, 256
     char ch2 = 0;            // try with 127, 128, 255, 256
     
+    ///@note : explain how bits for -128, -64 will be stored in signed char
+
+
+    
     printf("char %d\n", ch1);
     printf("size of char %lu\n", sizeof(char));
     #endif
