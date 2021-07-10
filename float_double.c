@@ -7,7 +7,7 @@ int main(){
 
     
     printf("%.7f\n", f);
-    printf("%.16lf\n", d);
+    printf("%.15lf\n", d);
     
     return 0;
 } 
