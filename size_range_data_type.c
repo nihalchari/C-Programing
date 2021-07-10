@@ -20,12 +20,14 @@ int main()
     
     
     #if 0
-    unsigned int num1 =4294967295;
+    unsigned int num1 =4294967295;      // max value 4 byte unsigned int can have
     printf("num1 %u\n", num1);          // must use %u format specifier as num1 is marked unsigned
     
-    signed int num2 =4294967295;
-    //int num2 = 2147483647;
-     printf("num2 %i\n", num2);          // must use %d or %i format specifier as num1 is signed
+    signed int num2 =2147483647;        // max +ve value 4 byte signed int can have    
+    printf("num2 %i\n", num2);          // must use %d or %i format specifier as num1 is signed
+    
+    ///@note : if u use %u for signed int, and exceed range beyond limit for signed +ve value, it may print same value.
+    /// it will not overflow to negative, so use %d or %i
     #endif
     
     
